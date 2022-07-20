@@ -1,30 +1,70 @@
 <!Doctype html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-">
     <meta name="description" content="Exemplos basicos de html">
     <title>html basicos</title>
 </head>
+
 <body>
-    <h1>Título fictício</h1>
-    
-    <p>Essa descrição faz parte de uma descrição fictícia, criada somente para que eu possa testar meu conhecimento em html.</p>
-    
-    <ol>
-        <li>Ana</li>
-        <li>Beatriz</li>
-        <li>Carla</li>
-        <li>Dani</li>
-    </ol>
+    <header>
+        <h1>Formulario para comprar sapato</h1>
+    </header>
 
-    <hr>
+    <main>
+        <form>
+            <label for="nome">Nome: </label>
+            <input id="nome" placeholder="Digite seu nome" type="text" tabindex="1"> <br><br>
 
-    <ul>
-        <li>carne</li>
-        <li>macarrão</li>
-        <li>fralda</li>
-        <li>bicicletas</li>
-    </ul>
+            <label for="email">Email: </label>
+            <input id="email" placeholder="Digite seu email" type="text" tabindex="2"> <br><br>
+
+            <label for="numSap">Núnero do sapato(de 35 a 45):</label> 
+            <select name="numSap">
+                <option value="35" selected>35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+                <option value="45">45</option>
+            </select><br><br>
+
+            <label>Para presente: </label>
+            <input type="checkbox" id="simPres" name="horns"> <label for="simPres">Sim</label>
+            <input type="checkbox" id="naoPres" name="horns"> <label for="naoPres">Não</label> <br><br>
+            
+            
+
+            <label for="marcaSap">Marca:</label> 
+            <select name="marcaSap">
+                <option value="nike" selected>Nike</option>
+                <option value="adidas">Adidas</option>
+                <option value="fila">Fila</option>
+                <option value="olimpicus">Olimpicus</option>
+            </select><br><br>
+
+            <label for="corSap">Marca:</label> 
+            <select name="corSap">
+                <option value="verde" selected>Verde</option>
+                <option value="amarelo">Amarelo</option>
+                <option value="vermelho">Vermelho</option>
+            </select><br><br>
+
+            <button>Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
+
 </html>
