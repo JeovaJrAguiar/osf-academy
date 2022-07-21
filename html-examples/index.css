@@ -1,0 +1,25 @@
+input{
+    border: 50px solid orange;
+    font-size: 30px;
+    margin: 50px 40px;
+    padding: 50px;
+
+    background-color: #f2f2f2;
+    color: #fff;
+
+    width: 20px;
+    height: 30px;
+}
+
+textarea{
+    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    left: 0;
+
+}
