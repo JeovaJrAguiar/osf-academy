@@ -29,7 +29,7 @@ body{
     background-color: #161b21;
 }
 
-header{ /*161b20*/
+header, form{ /*161b20*/
     border-color: aqua;
     color: #fff;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
