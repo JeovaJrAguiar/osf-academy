@@ -1,0 +1,60 @@
+input, label{
+    border: 5px relative orange;
+    font-size: px;
+    margin: 5px 4px;
+    padding: 5px;
+
+    background-color: #f2f2f2;
+    color: #fff;
+
+    width: 5px;
+    height: 5px;
+}
+
+textarea{
+    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    left: 0;
+
+    color: #fff;
+}
+
+body{
+    background-color: #161b21;
+}
+
+header, form{ /*161b20*/
+    border-color: aqua;
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    border: 10px solid orange;
+    padding: 5px;
+    margin: 5px;
+}
+
+header, form{ /*161b20*/
+    border-color: aqua;
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    border: 10px solid orange;
+    padding: 5px;
+    margin: 5px;
+}
+
+.divInform{
+    border-color: aqua;
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    border: 10px solid rgb(206, 203, 21);
+    padding: 5px;
+    margin: 5px;
+}
