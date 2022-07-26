@@ -34,19 +34,18 @@ header, form{ /*161b20*/
     color: #fff;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 
-    border: 10px solid orange;
+    border: 8px solid orange;
     padding: 5px;
     margin: 5px;
 }
+ b 
+form{
+    padding-left: 1%;
+    margin-left: 20%;
+    margin-top: 20%;
 
-header, form{ /*161b20*/
-    border-color: aqua;
-    color: #fff;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-
-    border: 10px solid orange;
-    padding: 5px;
-    margin: 5px;
+    width: 50%;
+    height: 50%;
 }
 
 .divInform{
@@ -54,7 +53,7 @@ header, form{ /*161b20*/
     color: #fff;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 
-    border: 10px solid rgb(206, 203, 21);
+    border: 10px solid red;
     padding: 5px;
     margin: 5px;
 }
