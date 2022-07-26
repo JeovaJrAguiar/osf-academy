@@ -50,6 +50,8 @@ let timer;
 /**
  * Só será executar o throttling ao decorrer de um determinado periodo de tempo, por exemplo 500 milesegundos.
  * Qualquer evento mais rapido que o tempo determinado será ignorado, ou seja as chamadas a resizeHandler serão ignoradas.
+ * 
+ * A ideia que tive foi que com o timer criado, nós não reiniciamos o timer.
  */
 function resizeHandlerWithTrottling(debounceTime){
     timer = setTimeout(() => {
