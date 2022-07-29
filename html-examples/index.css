@@ -17,3 +17,9 @@ header{ /*161b20*/
     padding: 5px;
     margin: 5px;
 }
+
+button{
+    padding: 3px;
+    background-color: orange;
+    color: white;
+}
