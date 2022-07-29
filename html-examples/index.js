@@ -1,18 +1,30 @@
 
-obterPokemons();
 
-let resultado;
+let resultado = await fetch("https://pokeapi.co/api/v2/pokemon");
+obterPokemons('');
+let pokemons = [];
+const listaPokemons = document.getElementById('lista-pokemons');
 
-async function obterPokemons() {
-    const listaPokemons = document.getElementById('lista-pokemons');
+setInterval(() => ({
+    pokemons.innerHTML = "";
+    pokemons.forEach(({ nome }) => ({
+        const item = document.createElement("li");
+        item.innerText = nome;
+        listaPokemons.appendChild(item);
+    }))
+}), 500);
+
+async function obterPokemons(movimento) {
+    console.log("Start");
 
     const loading = document.createElement('li');
     loading.innerText = 'Carregando ...';
     loading.id = 'loading';
     listaPokemons.appendChild(loading);
 
-    resultado = await fetch("https://pokeapi.co/api/v2/pokemon");
-    const { count, results } = await resultado.json();
+
+    const { count, results, next, previus } = await resultado.json();
+    resultado = await fetch(next);
 
     loading.remove();
 
@@ -22,26 +34,4 @@ async function obterPokemons() {
         item.innerText = name;
         listaPokemons.appendChild(item);
     });
-}
-
-async function obterProxPokemons(){
-    const listaPokemons = document.getElementById('lista-pokemons');
-
-    const loading = document.createElement('li');
-    
-    const resultado = await fetch(resultado.next);
-    const { count, results } = await resultado.json();
-
-    loading.remove();
-
-    document.getElementById("count").innerText = `Count: ${count}`;
-    results.forEach(({ name }) => {
-        const item = document.createElement("li");
-        item.innerText = name;
-        listaPokemons.appendChild(item);
-    });
-}
-
-async function obterAntPokemons(){
-    obterPokemons();
 }
