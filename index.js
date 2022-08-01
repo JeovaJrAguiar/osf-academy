@@ -11,9 +11,7 @@ const regrasDeValidacao = {
 function validador(onSuccess){
     if(
         Object.keys(regrasDeValidacao).every((chave) => {
-            const validar = regrasDeValidacao[chave];
-            const valor = window[chave];
-            return validar(valor);
+            return regrasDeValidacao[chave](window[chave]);
     })
     ){
         onSuccess();
@@ -25,6 +23,11 @@ function handleChange(id, value) {
 }
 
 function handleSubmit() {
+    /*if(required(nameValue) && required(emailValue)) {
+        console.log("Submit");
+    }else{
+        alert("Error");
+    }*/
     console.log({ nameValue, emailValue });
 }
 
