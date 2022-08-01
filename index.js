@@ -8,26 +8,25 @@ const regrasDeValidacao = {
     emailValue: required(5),
 };
 
-function validador(onSuccess){
-    if(
-        Object.keys(regrasDeValidacao).every((chave) => {
+function validador(onSuccess, onError) {
+    if(Object.keys(regrasDeValidacao).every((chave) => {
             return regrasDeValidacao[chave](window[chave]);
     })
     ){
         onSuccess();
+    }else{
+        onError();
     }
+}
+
+function handleError(){
+    alert('Error');
 }
 
 function handleChange(id, value) {
     window[id] = value;
 }
 
-function handleSubmit() {
-    /*if(required(nameValue) && required(emailValue)) {
-        console.log("Submit");
-    }else{
-        alert("Error");
-    }*/
+function handleSubmit() {    
     console.log({ nameValue, emailValue });
 }
-
