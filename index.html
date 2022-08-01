@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: #161b22;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <input id="nameValue" placeholder="nome" onchange="handleChange(this.id, this.value)">
+        <input id="emailValue" placeholder="email" onchange="handleChange(this.id, this.value)">
+
+        <button onClick="handleSubmit()">Enviar</button>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
