@@ -11,7 +11,9 @@ const regrasDeValidacao = {
 function validador(onSuccess){
     if(
         Object.keys(regrasDeValidacao).every((chave) => {
-            return regrasDeValidacao[chave](window[chave]);
+            const validar = regrasDeValidacao[chave];
+            const valor = window[chave];
+            return validar(valor);
     })
     ){
         onSuccess();
