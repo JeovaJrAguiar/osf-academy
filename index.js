@@ -1,4 +1,4 @@
-const required = (minLenght) => (value) => value?.lenght > minLenght;
+/*const required = (minLenght) => (value) => value?.lenght > minLenght;
 
 var nameValue = "";
 var emailValue = "";
@@ -29,4 +29,10 @@ function handleChange(id, value) {
 
 function handleSubmit() {    
     console.log({ nameValue, emailValue });
-}
+}*/
+
+
+import Calculadora from "./calculadora.js";
+import Log from "./log.js";
+
+Log(Calculadora.multiplicar(3,4));
