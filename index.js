@@ -35,4 +35,17 @@ function handleSubmit() {
 import Calculadora from "./calculadora.js";
 import Log from "./log.js";
 
+function multiplicaDoisNumeros(){
+    const num1 = document.getElementById("primeiroNum").value;
+    const num2 = document.getElementById("segundoNum").value;
+
+    console.log(num1);
+    console.log(num2);
+    
+    const resultado = Calculadora.multiplicar( num1 , num2 );
+
+    document.getElementById("result").innerText = `Resultado: ${resultado}`;
+}
+
 Log(Calculadora.multiplicar(3,4));
+

@@ -9,15 +9,29 @@
     <style>
         body{
             background-color: #161b22;
+            
+            color: #fff;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
         }
     </style>
 </head>
 <body>
     <div id="root">
+        <h1>OSF Academy - Calculadora</h1>
+
+        <p>First number: <input id="primeiroNum" placeholder="first number interger"></p>
+        <p>Secund number: <input id="segundoNum" placeholder="secund number interger"></p>
+        <button onclick="multiplicaDoisNumeros()">Multiplicar</button>
+
+        <p id="result">Resultado: 0</p>
+        
+
+        <!--
         <input id="nameValue" placeholder="nome" onchange="handleChange(this.id, this.value)">
         <input id="emailValue" placeholder="email" onchange="handleChange(this.id, this.value)">
 
         <button onclick="validador(handleSubmit, handleError)">Enviar</button>
+        -->
     </div>
     
     <script type="module" src="./index.js"></script>
