@@ -5,5 +5,15 @@ test('Quando chamado e passado dois numeros, ele retorna a soma de ambos', () =>
     const y = Math.random()*10;
 
     expect(sum(x, y)).toBe(x + y);
+    expect(sum(x, y)).toBe(x + y);
+    expect(sum(x, y)).toBe(x + y);
+    expect(sum(x, y)).toBe(x + y);
+    expect(sum(x, y)).toBe(x + y);
+    expect(sum(x, y)).toBe(x + y);
+    expect(sum(x, y)).toBe(x + y);
+    expect(sum(x, y)).toBe(x + y);
+    expect(sum(x, y)).toBe(x + y);
+    expect(sum(x, y)).toBe(x + y);
+    expect(sum(x, y)).toBe(x + y);
 }
 );
