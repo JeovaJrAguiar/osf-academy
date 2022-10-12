@@ -1,8 +1,8 @@
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect , useState} from "react";
 
 function ListPokemons(){
-    console.log("React ")
+    console.log("React ");
 
     const [pokemons, setPokemons] = useState([]);
 
